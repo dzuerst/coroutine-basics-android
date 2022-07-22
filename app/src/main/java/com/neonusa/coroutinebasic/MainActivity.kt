@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
     // membuat sebuah coroutine function dasar
     // launch digunakan untuk membuat sebuah coroutine baru yang berjalan pada thread main
     // (lihat penggunaan dispatchers.main)
+
     private fun coroutineFunc() = CoroutineScope(Dispatchers.Main).launch {
         for (i in 1..100) {
             Log.i("MainActivity", "coroutineFunc: $i")
